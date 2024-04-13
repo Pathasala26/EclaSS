@@ -1,0 +1,337 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    
+    <style> 
+     body {
+      background: Magenta;
+      font-family: 'Roboto';
+      margin: auto;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+    /**Left side CSS**/
+    .left-box{
+      float: left;
+      box-shadow: 10px 10px 5px aqua;
+      background-color: blue;
+      height: 961px;
+      width: 300px;
+      box-sizing: border-box;
+      margin: 15px 15px 15px 15px;
+    }
+    
+    /**Left side content CSS**/
+    .top-left{
+      position: relative;
+      border-style: solid;
+      border-width: 0px 0px 3px 0px;
+      box-sizing: border-box;
+      height: 25%;
+      margin: 0px;
+    }
+    
+    .name {
+        position: absolute;
+        font-size: 20px;
+        color: aqua;
+        bottom: 8px;
+        left: 16px;
+        box-sizing: border-box;
+    }
+    
+    img { 
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    
+    .objective {
+       border-style: solid;
+       border-width: 0px 0px 2px 0px ;
+       margin: 15px;
+       padding: 10px;
+       box-sizing: border-box;
+    }
+    
+    .objective-img{
+      float: left;
+      border: solid;
+      border-width: 3px;
+      box-sizing: border-box;
+      width: 30px;
+      height: auto;
+    }
+    
+    .objective-text{
+      display: inline-block;
+      text-align: left;
+      color: white;
+      box-sizing: border-box;
+      margin: 15px 15px 15px 15px;
+    }
+    
+    .phone{
+       border-style: solid;
+       border-width: 0px 0px 2px 0px;
+       box-sizing: border-box;
+       margin: 15px;
+       padding: 10px;
+    }
+    
+    .phone-text {
+      display: inline-block;
+      text-align: left;
+      font-size: 20px;
+      color: white;
+      margin: 15px 15px 15px 15px;
+      box-sizing: border-box;
+    }
+    
+    .email{
+       border-style: solid;
+       border-width: 0px 0px 0px 0px;
+       box-sizing: border-box;
+       margin: 15px;
+       padding: 15px;
+    }
+    
+    .email-text {
+      display: inline-block;
+      text-align: left;
+      font-size: 17px;
+      color: white;
+      margin: 15px 15px 15px 15px;
+      box-sizing: border-box;
+    }
+    /**work experience box**/
+    .work-experience {
+      float: left;
+      box-shadow: 10px 10px 5px aqua;
+      background-color: #dbfefb;
+      height: 300px;
+      width: 850px;
+      margin: 15px 15px 15px 15px;
+      box-sizing: border-box;
+    }
+    
+    .work-img {
+      float: left;
+      background-color: yellow;
+      height: 30px;
+      width: 50px;
+      margin: 25px 30px 100% 30px;
+      box-sizing: border-box;
+    }
+    
+    .job-box{
+      float: left;
+      border: solid;
+      border-width: 0px 0px 3px 0px;
+      box-sizing: border-box;
+      margin: 0px 10px 0px 0px;
+      padding: 10px 10px 10px 10px;
+      width: 200px;
+      height: auto;
+    }
+    
+    .job-box:hover {
+      background-color:Chartreuse ;
+    }
+    
+    .job-title {
+      font-weight: green;
+      line-height: 1.5;
+      box-sizing: border-box;
+    }
+    
+    .job-date{
+      color: #b30000;
+      line-height: 1.5;
+      box-sizing: border-box;
+    }
+    
+    
+    .job-description{
+      line-height: 1.5;
+      box-sizing: border-box;
+    }
+    
+    /**Education box**/
+    .education {
+      float: left;
+      box-shadow: 10px 10px 5px aqua;
+      background-color: #dbfefb;
+      box-sizing: border-box;
+      height: 300px;
+      width: 850px;
+      margin: 15px 15px 15px 15px;
+    }
+    
+    /**interest box**/
+    .interest {
+      float: left;
+      box-shadow: 10px 10px 5px blue;
+      background-color:  #dbfefb;
+      box-sizing: border-box;
+      height: 300px;
+      width: 410px;
+      margin: 15px 15px 15px 15px;
+    }
+    
+    /**Skills box**/
+    .skills {
+      float: left;
+      box-shadow: 10px 10px 5px  blue;
+      background-color: #dbfefb;
+      box-sizing: border-box;
+      height: 300px;
+      width: 410px;
+      margin: 15px 15px 15px 15px;
+    }
+    
+     {
+      list-style-type: none;
+    }
+    
+    ul {
+      list-style: none;
+      margin: 10px 20px 20px 45px;
+    }
+    
+    li.l1 {
+      border: solid;
+      border-width: 1px;
+      background-color: yellow;
+      margin: 10px 110px 10px 0px;
+    }
+    
+    li.l2 {
+      border: solid;
+      border-width: 1px;
+      background-color: green;
+      margin: 10px 130px 10px 0px;
+    }
+    
+    li.l3 {
+      border: solid;
+      border-width: 1px;
+      background-color: yellow;
+      margin: 10px 0px 10px 0px;
+    }
+    
+    li.l4 {
+      border: solid;
+      border-width: 1px;
+      background-color: green;
+      margin: 10px 90px 10px 0px;
+      padding: 0px 101px 0px 0px;
+    }
+    
+    
+    
+    
+    
+    </style>
+    </head>
+        
+     <body  >
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <div class="left-box">
+      <div class="top-left">
+      <img src="Copy of Ss.jpg" alt="Cody Man">
+      <div class="name">CV</div>
+        <div class="objective">
+          <img class="objective-img" src="https://cdn4.iconfinder.com/data/icons/eldorado-user/40/user-128.png">
+          <div class="objective-text"> <div class="job-box">SANTOSH SENAPATI</div>
+          </div>
+        </div>
+        <div class="phone">
+          <img class="objective-img" src="http://icons.iconarchive.com/icons/icons8/android/512/Mobile-Phone-2-icon.png">
+          <div class="phone-text">6370217581<br>mobile<br><br>7852963880<br>work
+          </div>
+        </div>
+         <div class="email">
+          <img class="objective-img" src="http://static.wixstatic.com/media/d822a6_af29afe70e1a4e9891f94a627914b6ec.png">
+          <div class="email-text"><div class="job-box">santosh26082005@gmail.com</div><br>(personal)<br><br>santoshsenapati@giet.edu<br>(work)
+          </div>
+        </div>
+    </div>
+    </div>
+     <div class="work-experience">
+       <div class="work-img"> <img src="https://imgs.search.brave.com/LsmsZ2ECxnRVSLTN_fr7BG-uuEifk6MftDt85Spq61g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9ncmFw/aGljc3ByaW5ncy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMDIvU2NyZWVu/LVNob3QtMjAyNC0w/Mi0xOS1hdC0xMi01/OS0wOC1QTS5wbmc_/eDU1ODEy ">
+       </div>
+        <h1 class="work-title">Project Experience</h1><!project work>
+       <div class="job-box">
+         <div class="job-title">project 1<br>   <font color="green">Greentech</font></div>
+       <div class="job-date">Jan 2024 - Present</div>
+       <div class="job-description"> creat awerness for to start the world by safe the green.</div><br>
+      </div>
+       <div class="job-box">
+       <div class="job-title">Project 2<br>  <font color="green">E-laibary</font></div>
+       <div class="job-date">march 2024 - Present</div>
+       <div class="job-description"> store all the types of book,notes,assignment, qution bank .</div><br>
+      </div>
+       <div class="job-box">
+         <div class="job-title">Project 3<br><font color="blue"> I.O.T</font> </div>
+       <div class="job-date">Jan 2015  - Present</div>
+       <div class="job-description"> learn aobout iot and machine learning.</div><br><br>
+      </div>
+    </div>
+    <div class="education">
+      <div class="work-img"> <img src="   ">
+       </div>
+      <h1>Education</h1>
+      <div class="job-box">
+       <div class="job-title">Matric</div>
+       <div class="job-date"> march 2020-march 2021</div>
+       <div class="job-description"> CGPA(8.2)</div><br>
+      </div>
+       <div class="job-box">
+       <div class="job-title"> Inter</div>
+       <div class="job-date">march 2021-March 2023</div>
+       <div class="job-description">CGPA(5.9)</div><br>
+      </div>
+       <div class="job-box">
+       <div class="job-title"> (B.TECH-ece)</div>
+       <div class="job-date">Aug 2023-sept 2027</div>
+       <div class="job-description">CGPA(8.6) </div><br>
+      </div>
+    </div>
+    </div>
+    <div class="skills">
+      <div class="work-img"> <img src=" https://imgs.search.brave.com/NMlz84m-rDMks2znPIYdD5HJwlCltubHvRvPM3Effy8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzY0NDUz/OTEvc2NyZWVuc2hv/dHMvMTYzNzc0NTkv/bWVkaWEvNTUzZTAx/NjkzZGE5YjM0NjBi/NWNmMzZjMDZhYjcw/MjkucG5nP3Jlc2l6/ZT00MDB4MA">
+       </div>
+      <h1>Skills</h1>
+      <div class="graph">
+        <ul>
+          <li class="l1"> HTML </li>
+          <li class="l2">CSS</li>
+          <li class="l3">Knowledge Management</li>
+          <li class="l4">ServiceNow</li>
+        </ul>
+      </div>
+      </div>
+      <div class="interest">
+      <div class="work-img"> <img src="https://imgs.search.brave.com/RU3Ey7dXaYkmPnmkHPC1sS0sjPDgUD7FBdpNx9EHpWg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL0gvaGVhcnQt/bG9nby0yMkUwM0NG/QUJFLXNlZWtsb2dv/LmNvbS5wbmc_dj02/MzgxMzM1NjM4MjAw/MDAwMDA  ">
+       </div>
+      <h1>Interests</h1>
+        <div class="graph">
+        <ul>
+          <li class="l1">FIND THE PROBLEM</li>
+          <li class="l2">playing</li>
+          <li class="l3">LEARN the letest digital technology</li>
+          <li class="l4">known to me by me</li>
+        </ul>
+      </div>
+      </div>
+      </div>
+      </body>  
+    
+    
+    </html>
